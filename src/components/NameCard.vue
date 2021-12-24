@@ -20,7 +20,7 @@ watch(enter, (v) => {
 </script>
 
 <template>
-  <n-card title="Enter your name" class="max-w-[40vw] h-[133px]">
+  <n-card title="Enter your name" class="max-w-[90vw] h-[133px]">
     <div class="flex justify-center">
       <n-input 
         v-model:value="name" 

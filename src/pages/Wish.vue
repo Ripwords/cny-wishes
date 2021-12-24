@@ -11,7 +11,7 @@ const title = `Happy CNY from ${name}!`
 <template>
   <div class="fixed w-full h-full bg-dark-700">
     <div class="flex justify-center mt-10">
-      <n-card :title="title" class="max-w-[40vw] h-[133px]">
+      <n-card :title="title" class="max-w-[90vw] h-[133px]">
         Happy CNY
       </n-card>
     </div>
