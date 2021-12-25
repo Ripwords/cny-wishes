@@ -9,7 +9,8 @@ const router = useRouter()
 const { enter } = useMagicKeys()
 
 const entered =  () => {
-  router.push({ path: `/wish/${cipher(name.value.toString())}` })
+  const cipherName = cipher(name.value.toString())
+  router.push({ path: `/wish/${cipherName}` })
 }
 
 watch(enter, (v) => {

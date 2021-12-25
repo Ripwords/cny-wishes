@@ -1,4 +1,5 @@
 import { createWebHashHistory, RouteRecordRaw, createRouter } from 'vue-router'
+import { cipher } from './utils/cipher' 
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/wish/',
-    redirect: '/wish/No One'
+    redirect: `/wish/${cipher('No One')}`
   }
 ]
 
